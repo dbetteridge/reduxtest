@@ -6,12 +6,11 @@ import { mapLoading } from '../../actions/mapLoading'
 
 class App extends Component {
   componentDidMount(){
-    mapLoading(true);
+    this.props.mapLoading(true);
   }
   render() {
     return (
-      <div className="App">
-        <div id="map" />
+      <div className="App">        
         <Map/>
       </div>
     );
